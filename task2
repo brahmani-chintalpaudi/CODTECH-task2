@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financial Analysis Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Analysis Dashboard</h1>
+        
+        <div class="chart-container">
+            <h2>Financial Performance Over Time</h2>
+            <div id="trend_lines"></div>
+        </div>
+        
+        <div class="chart-container">
+            <h2>Profit Margin Over Time</h2>
+            <div id="area_chart"></div>
+        </div>
+    </div>
+    
+    <script>
+        var trend_lines = {fig.to_json()};
+        Plotly.newPlot('trend_lines', trend_lines.data, trend_lines.layout);
+        
+        var area_chart = {fig2.to_json()};
+        Plotly.newPlot('area_chart', area_chart.data, area_chart.layout);
+    </script>
+</body>
+</html>
